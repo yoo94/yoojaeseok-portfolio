@@ -13,6 +13,8 @@
     "title": "Frontend Developer",
     "name": "I'm Jaeseok Yoo",
     "description": "A web developer who prioritizes user experience and provides creative and efficient solutions.",
+    "description2": "Currently working as a lead developer in the frontend team at The E&M, managing schedules for both existing and new projects.",
+    "description3": "I am committed to continuous learning and sharing technical knowledge within the team, aiming for collective growth.",
     "learnMore": "Learn More",
     "contact": "Contact"
   },
@@ -71,6 +73,7 @@
   },
   "career": {
     "title": "Career",
+    "work": "Key Responsibilities",
     "careers": {
       "theenm": {
         "company": "The E&M",
@@ -106,15 +109,58 @@
   },
   "activities": {
     "title": "Activities",
-    "ssafy": "Samsung Youth SW Academy (SSAFY) 12th",
-    "period": "2024.11 - Present",
-    "description": "Java Track - Web Full-stack Development Training Program",
-    "inProgress": "In Progress",
-    "highlights": {
-      "fullstack": "Web Full-stack Development",
-      "java": "Java Programming",
-      "project": "Project-based Learning",
-      "teamwork": "Team Collaboration"
+    "activities": {
+      "ssafy": {
+        "title": "Samsung Youth SW Academy (SSAFY) 12th",
+        "period": "2024.11 - Present",
+        "description": "Java Track - Web Full-stack Development Training Program",
+        "status": "In Progress",
+        "highlights": [
+          "Web Full-stack Development",
+          "Java Programming",
+          "Project-based Learning",
+          "Team Collaboration"
+        ]
+      },
+      "inner_circle": {
+        "title": "Inner Circle",
+        "organization": "FastCampus",
+        "period": "2024.07 ~ 2024.11",
+        "description": "Side project with experienced developers hosted by FastCampus, won 1st place in presentation",
+        "status": "Completed",
+        "highlights": [
+          "Latest Technology Application",
+          "Code Review Experience",
+          "Convention Experience",
+          "1st Place Award"
+        ]
+      },
+      "js_study": {
+        "title": "JavaScript Study",
+        "period": "2022.04 - 2023.08",
+        "frequency": "Weekly",
+        "description": "Study focused on theoretical aspects and understanding operational principles rather than project implementation",
+        "status": "Completed",
+        "highlights": [
+          "Core JavaScript Study",
+          "Modern JavaScript Study",
+          "Theoretical Principles Learning",
+          "Operational Principle Analysis"
+        ]
+      },
+      "react_study": {
+        "title": "React Study",
+        "period": "2021.06 - 2021.08",
+        "frequency": "Weekly",
+        "description": "In-house React study group",
+        "status": "Completed",
+        "highlights": [
+          "React Fundamentals",
+          "Component Design",
+          "State Management",
+          "Team Knowledge Sharing"
+        ]
+      }
     }
   },
   "skills": {

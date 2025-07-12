@@ -138,7 +138,7 @@ export default function Career() {
                       transition={{ duration: 0.8, delay: 1.4 + index * 0.3 }}
                       className="mb-6"
                     >
-                      <h5 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">주요 업무</h5>
+                      <h5 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">{t('career.work')}</h5>
                       <ul className="space-y-2">
                         {career.responsibilities.map((responsibility, respIndex) => (
                           <motion.li
