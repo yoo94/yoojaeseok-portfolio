@@ -1,0 +1,223 @@
+{
+  "nav": {
+    "about": "About",
+    "education": "Education",
+    "career": "Career",
+    "activities": "Activities",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello",
+    "title": "Frontend Developer",
+    "name": "I'm Jaeseok Yoo",
+    "description": "A web developer who prioritizes user experience and provides creative and efficient solutions.",
+    "learnMore": "Learn More",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I develop innovative web applications based on deep understanding of web technologies and user-centered thinking. I enjoy quickly learning and applying new technologies, and I create better results through collaboration with teams.",
+    "highlights": {
+      "userCentered": "User-Centered Thinking",
+      "fastLearning": "Fast Learning",
+      "teamwork": "Teamwork & Collaboration",
+      "innovative": "Innovative Solutions"
+    }
+  },
+  "education": {
+    "title": "Education & Certifications",
+    "educationTitle": "Education",
+    "certificationsTitle": "Certifications",
+    "universities": {
+      "knou": {
+        "name": "Korea National Open University",
+        "period": "2023.02 ~ 2025.02",
+        "status": "Expected to graduate",
+        "major": "Computer Science",
+        "degree": "Bachelor's",
+        "description": "Completed courses in basic computer engineering knowledge and understanding of various programming languages"
+      },
+      "mtdi": {
+        "name": "Management Technology Development Institute",
+        "period": "2020.09 ~ 2021.03",
+        "status": "Graduated",
+        "major": "Machine Learning, Java-based SW Developer Course",
+        "degree": "Private Education",
+        "description": "Completed Java and Spring-based web development and Python machine learning foundation courses"
+      },
+      "ktcu": {
+        "name": "Korea Tourism College",
+        "period": "2013.03 ~ 2017.02",
+        "status": "Graduated",
+        "major": "Business Administration",
+        "degree": "Associate's",
+        "description": ""
+      }
+    },
+    "certifications": {
+      "sqld": {
+        "name": "SQLD",
+        "date": "2023.12",
+        "issuer": "Korea Data Industry Promotion Institute"
+      },
+      "engineer": {
+        "name": "Engineer Information Processing",
+        "date": "2023.11",
+        "issuer": "Human Resources Development Service of Korea"
+      }
+    }
+  },
+  "career": {
+    "title": "Career",
+    "careers": {
+      "theenm": {
+        "company": "The E&M",
+        "position": "Frontend Development Team Lead Developer",
+        "type": "Researcher(Lead) | Full-time",
+        "period": "2024.12 ~ Present",
+        "description": "Operation and new feature development for live broadcasting platform PopcornTV",
+        "responsibilities": [
+          "Frontend Development: Operation and new feature development, performance optimization (Next.js 13 and TypeScript)",
+          "Short-form App Hybrid Page Development: Implemented hybrid pages for authentication, payment history, etc. (Next.js 14)",
+          "CI/CD Support: Built frontend deployment environment pipeline using Jenkins, Docker, and GitLab",
+          "Test Tool Introduction: Test automation and efficiency improvement through Jest and Playwright",
+          "Version Control Improvement: Improved collaboration and code management processes by introducing Git conventions"
+        ],
+        "skills": ["Next.js", "TypeScript", "React", "Jenkins", "Docker", "GitLab", "Jest", "Playwright"]
+      },
+      "unipost": {
+        "company": "Unipost Co., Ltd.",
+        "position": "Web and Mobile Solution Developer",
+        "type": "Web Development Team Manager | Full-time",
+        "period": "2021.04 ~ 2024.12 (3 years 9 months)",
+        "description": "Web and mobile solution development",
+        "responsibilities": [
+          "Frontend Development: Solution construction using RequireJS and jQuery for web, performance improvement and maintainability enhancement using React and TypeScript for mobile",
+          "Mobile App Enhancement: Rebuilt existing hybrid app based on React Native and implemented global state management using Redux",
+          "CI/CD Support: Experience in supporting pipeline construction using Jenkins",
+          "Automation Tool Introduction: Test automation and efficiency improvement through Playwright"
+        ],
+        "skills": ["React", "TypeScript", "React Native", "Redux", "jQuery", "RequireJS", "Jenkins", "Playwright"]
+      }
+    },
+    "technologiesUsed": "Technologies Used"
+  },
+  "activities": {
+    "title": "Activities",
+    "ssafy": "Samsung Youth SW Academy (SSAFY) 12th",
+    "period": "2024.11 - Present",
+    "description": "Java Track - Web Full-stack Development Training Program",
+    "inProgress": "In Progress",
+    "highlights": {
+      "fullstack": "Web Full-stack Development",
+      "java": "Java Programming",
+      "project": "Project-based Learning",
+      "teamwork": "Team Collaboration"
+    }
+  },
+  "skills": {
+    "title": "Core Skills",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools",
+    "proficiency": "Proficiency"
+  },
+  "projects": {
+    "title": "Projects",
+    "companyProjects": "Company Projects",
+    "personalProjects": "Personal Projects",
+    "technologiesUsed": "Technologies Used",
+    "viewProject": "View Project",
+    "company": {
+      "popcorntv": {
+        "title": "PopcornTV Maintenance",
+        "company": "The E&M",
+        "period": "2024.12 ~ Present",
+        "description": "Maintenance and new feature development for live broadcasting platform PopcornTV",
+        "responsibilities": [
+          "Maintenance and refactoring",
+          "New feature development"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "Axios", "Jotai", "Tailwind CSS", "shadcn UI", "ESLint", "Prettier"],
+        "infrastructure": ["Jenkins", "Docker"],
+        "versionControl": "Git (GitLab)"
+      },
+      "shortform": {
+        "title": "Short-form App Hybrid Project",
+        "company": "The E&M",
+        "period": "2025.01 ~ 2025.03",
+        "description": "Hybrid page development project for short-form application",
+        "responsibilities": [
+          "Implementation of basic boards including coin history and terms",
+          "Identity verification page with Mobilians interface",
+          "Multi-language processing using i18n library",
+          "Deployment infrastructure setup and CI/CD configuration"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "ky-universe", "Zustand", "i18n", "Tailwind CSS", "shadcn UI", "ESLint", "Prettier"],
+        "infrastructure": ["Jenkins", "Docker"],
+        "versionControl": "Git (GitLab)"
+      },
+      "unidacu": {
+        "title": "Unidacu - Expense Processing Solution",
+        "company": "Unipost",
+        "period": "2021.04 ~ 2024.11",
+        "description": "Development and customization of expense processing solution (9 projects total)",
+        "responsibilities": [
+          "Participated in hmm, sajoCpk, Namhae Chemical, SK Tmap, SK Signet, SK Stoa, SK Biopharm, Hanwha Energy, Namhae Chemical projects",
+          "Screen customization for company-specific features in expense processing solution",
+          "Infrastructure setup and code development from frontend to backend, successfully opened according to WBS",
+          "Contributed to securing large-scale customers and next project orders (SK Group dedicated)",
+          "Test automation tool introduction: Reduced e2e test effort through test automation and efficiency improvement via Playwright"
+        ],
+        "tech": {
+          "web": ["Java 11", "Spring 4", "Tomcat 9", "RequireJS", "jUnit"],
+          "mobile": ["React", "React Native", "TypeScript", "Redux", "Zustand"],
+          "etc": ["GitLab", "GitHub", "Jenkins", "Redmine"]
+        }
+      },
+      "unidacu_mobile": {
+        "title": "Unidacu Mobile Enhancement Project",
+        "company": "Unipost",
+        "period": "2023.10 ~ 2024.01",
+        "description": "System transition from existing hybrid app to modern JavaScript-based system",
+        "responsibilities": [
+          "Led system transition from vanillaJs and Apache Cordova solution to modern JS (3 members including R&D team)",
+          "Implementation of various voucher processing screens and file upload code",
+          "Reduced input effort from 0.5m/m to 0.4m/m through optimization of common components and global state management"
+        ],
+        "tech": ["React", "React Native", "TypeScript", "Redux"]
+      }
+    },
+    "personal": {
+      "innerbooks": {
+        "title": "InnerBooks - Book Recommendation Website",
+        "description": "A book recommendation website with a user preference-based recommendation system. Provides optimal book suggestions through personalized algorithms and intuitive UI/UX.",
+        "period": "2024.03 - 2024.05",
+        "link": "https://www.innerbooks.shop/"
+      },
+      "typingchanger": {
+        "title": "TypingChanger Easy - NPM Package",
+        "description": "A JavaScript library for easy implementation of text typing animations. Allows applying various typing effects to websites with simple configuration.",
+        "period": "2024.06 - 2024.07",
+        "link": "https://www.npmjs.com/package/typingchanger_easy"
+      }
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Let's work together! Feel free to reach out anytime!",
+    "github": "GitHub",
+    "githubDesc": "Project Source Code",
+    "portfolio": "Portfolio",
+    "portfolioDesc": "Personal Portfolio",
+    "blog": "Blog",
+    "blogDesc": "Tech Blog",
+    "visitSite": "Visit Site",
+    "emailTitle": "Contact via Email",
+    "emailDesc": "If you have project collaboration or job opportunities, please feel free to email me.",
+    "sendEmail": "Send Email",
+    "footer": "© 2024 Jaeseok Yoo. All rights reserved."
+  }
+}

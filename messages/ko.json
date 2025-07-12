@@ -1,0 +1,227 @@
+{
+  "nav": {
+    "about": "소개",
+    "education": "학력",
+    "career": "경력",
+    "activities": "대외활동",
+    "skills": "스킬",
+    "projects": "프로젝트",
+    "contact": "연락처"
+  },
+  "hero": {
+    "greeting": "안녕하세요",
+    "title": "프론트엔드 개발자",
+    "name": "유재석입니다",
+    "description": "vanillaJs부터 모던js를 이용해 효율적 개발과 최적의 ux를 제공하는 것을 좋아하는 프론트앤드 개발자입니다.",
+    "description2": "더이앤엠(주), 프론트엔드팀 리드 개발자로 근무중이며, SM뿐 아니라 신규 프로젝트에서도 프론트팀의 일정을 관리하고 있습니다.",
+    "description3": "실무 뿐 아니라 기술 스터디를 꾸준히 진행하며 기술적 지식을 팀 내에 공유하고 적용시켜 구성원과 함께 성장하는것을 지향합니다",
+    "learnMore": "더 알아보기",
+    "contact": "연락하기"
+  },
+  "about": {
+    "title": "소개",
+    "description": "웹 기술에 대한 깊은 이해와 사용자 중심적 사고를 바탕으로 혁신적인 웹 애플리케이션을 개발하고자 노력합니다. 새로운 기술을 접하고 적용해보는 것을 좋아하며, 팀과의 협업을 통해 더 나은 결과를 만들어냅니다. 효율적인 일처리를 좋아합니다.",
+    "highlights": {
+      "userCentered": "사용자 중심적 사고",
+      "fastLearning": "꾸준한 학습",
+      "teamwork": "팀워크 & 협업",
+      "innovative": "효율적인 프로세스"
+    }
+  },
+  "education": {
+    "title": "학력 사항 및 자격증",
+    "educationTitle": "학력",
+    "certificationsTitle": "자격증",
+    "universities": {
+      "knou": {
+        "name": "방송통신대학교",
+        "period": "2023.02 ~ 2025.02",
+        "status": "졸업",
+        "major": "컴퓨터 과학과",
+        "degree": "학사",
+        "description": "기본적인 컴퓨터 공학 지식 및 기타 언어에 대한 이해 과정 이수"
+      },
+      "mtdi": {
+        "name": "경영기술개발원",
+        "period": "2020.09 ~ 2021.03",
+        "status": "졸업",
+        "major": "머신러닝, Java 기반 SW개발자 과정",
+        "degree": "사설 교육",
+        "description": "Js와 Spring 기반 웹 개발과 파이썬을 이용한 머신러닝 기초과정 이수"
+      },
+      "ktcu": {
+        "name": "한국관광대학교",
+        "period": "2013.03 ~ 2017.02",
+        "status": "졸업",
+        "major": "경영학 전공",
+        "degree": "전문학사",
+        "description": ""
+      }
+    },
+    "certifications": {
+      "sqld": {
+        "name": "SQLD",
+        "date": "2023.12",
+        "issuer": "한국데이터산업진흥원"
+      },
+      "engineer": {
+        "name": "정보처리기사",
+        "date": "2023.11",
+        "issuer": "한국산업인력공단"
+      }
+    }
+  },
+  "career": {
+    "title": "경력",
+    "careers": {
+      "theenm": {
+        "company": "The E&M",
+        "position": "프론트엔드개발팀 리드 개발자",
+        "type": "연구원(리드) | 정규직",
+        "period": "2024.12 ~ 재직 중",
+        "description": "라이브 방송 플랫폼 팝콘티비 운영 및 신규 기능 개발 업무",
+        "responsibilities": [
+          "프론트엔드 개발: 운영 및 신규 기능 개발, 성능 고도화 (Next.js 13 및 TypeScript)",
+          "숏폼 앱 하이브리드 페이지 개발: 인증, 결제 내역 등 하이브리드로 필요한 페이지 구현 (Next.js 14)",
+          "CI/CD 지원: Jenkins, Docker, GitLab을 이용한 프론트엔드 배포환경 파이프라인 구축",
+          "테스트 도구 도입: Jest와 Playwright를 통한 테스트 자동화 및 효율성 증대",
+          "버전 관리 개선: Git 컨벤션 도입으로 협업 및 코드 관리 프로세스 개선"
+        ],
+        "skills": ["Next.js", "TypeScript", "React", "Jenkins", "Docker", "GitLab", "Jest", "Playwright"]
+      },
+      "unipost": {
+        "company": "주식회사 유니포스트",
+        "position": "웹 및 모바일 솔루션 개발자",
+        "type": "웹개발팀 매니저 | 정규직",
+        "period": "2021.04 ~ 2024.12 (3년 9개월)",
+        "description": "웹 및 모바일 솔루션 개발",
+        "responsibilities": [
+          "프론트엔드 개발: 웹에서는 RequireJS 및 jQuery를 이용한 솔루션 구축, 모바일에서는 React 및 TypeScript를 활용한 성능 향상 및 유지 보수성 개선",
+          "모바일 앱 고도화: 기존 하이브리드 앱을 React Native 기반으로 재구축 및 Redux를 사용하여 전역 상태 관리 구현",
+          "CI/CD 지원: Jenkins를 이용한 파이프라인 구축 등에 대한 지원 경험",
+          "자동화 도구 도입: Playwright를 통한 테스트 자동화 및 효율성 증대"
+        ],
+        "skills": ["React", "TypeScript", "React Native", "Redux", "jQuery", "RequireJS", "Jenkins", "Playwright"]
+      }
+    },
+    "technologiesUsed": "사용 기술"
+  },
+  "activities": {
+    "title": "대외활동",
+    "ssafy": "삼성 청년 SW 아카데미 (SSAFY) 12기",
+    "period": "2024.11 - 현재",
+    "description": "Java 트랙 - 웹 풀스택 개발 교육과정",
+    "inProgress": "진행 중",
+    "highlights": {
+      "fullstack": "웹 풀스택 개발",
+      "java": "Java 프로그래밍",
+      "project": "프로젝트 기반 학습",
+      "teamwork": "팀 협업"
+    }
+  },
+  "skills": {
+    "title": "핵심 역량",
+    "frontend": "프론트엔드",
+    "backend": "백엔드",
+    "infra": "인프라",
+    "tools": "도구",
+    "proficiency": "숙련도"
+  },
+  "projects": {
+    "title": "프로젝트",
+    "companyProjects": "회사 프로젝트",
+    "personalProjects": "개인 프로젝트",
+    "technologiesUsed": "사용 기술",
+    "viewProject": "프로젝트 보기",
+    "company": {
+      "popcorntv": {
+        "title": "팝콘티비 유지보수",
+        "company": "The E&M",
+        "period": "2024.12 ~ 진행 중",
+        "description": "라이브 방송 플랫폼 팝콘티비의 유지보수 및 신규 기능 개발",
+        "responsibilities": [
+          "유지보수 및 리팩토링",
+          "신규기능 개발"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "Axios", "Jotai", "Tailwind CSS", "shadcn UI", "ESLint", "Prettier"],
+        "infrastructure": ["Jenkins", "Docker"],
+        "versionControl": "Git (GitLab)"
+      },
+      "shortform": {
+        "title": "숏폼 앱 하이브리드 프로젝트",
+        "company": "The E&M",
+        "period": "2025.01 ~ 2025.03",
+        "description": "숏폼 어플리케이션의 하이브리드 페이지 개발 프로젝트",
+        "responsibilities": [
+          "코인내역, 약관 등 기본 게시판 구현",
+          "본인인증 페이지 모빌리언스 인터페이스",
+          "i18n 라이브러리를 이용한 다국어 처리",
+          "배포 인프라 구축 및 CI/CD 설정"
+        ],
+        "tech": ["Next.js", "React", "TypeScript", "ky-universe", "Zustand", "i18n", "Tailwind CSS", "shadcn UI", "ESLint", "Prettier"],
+        "infrastructure": ["Jenkins", "Docker"],
+        "versionControl": "Git (GitLab)"
+      },
+      "unidacu": {
+        "title": "유니다큐 - 경비처리 솔루션",
+        "company": "유니포스트",
+        "period": "2021.04 ~ 2024.11",
+        "description": "경비처리 솔루션 개발 및 커스터마이징 (총 9개 프로젝트)",
+        "responsibilities": [
+          "hmm, sajoCpk, 남해화학, SK Tmap, SK시그넷, SK스토아, SK바이오팜, 한화에너지, 남해화학 프로젝트 투입",
+          "경비처리 솔루션에서 자사기능에 맞게 화면 커스터마이징",
+          "인프라 구축 및 프론트-백엔드까지 코드 작성 및 WBS에 맞게 성공적으로 오픈",
+          "큰 규모의 고객 확보에 기여하여 다음 프로젝트 수주에 기여 (SK그룹 전담)",
+          "테스트 자동화 도구 도입: Playwright를 통한 테스트 자동화 및 효율성 증대로 e2e테스트 공수를 줄임"
+        ],
+        "tech": {
+          "web": ["Java 11", "Spring 4", "Tomcat 9", "RequireJS", "jUnit"],
+          "mobile": ["React", "React Native", "TypeScript", "Redux", "Zustand"],
+          "etc": ["GitLab", "GitHub", "Jenkins", "Redmine"]
+        }
+      },
+      "unidacu_mobile": {
+        "title": "유니다큐 모바일 고도화 프로젝트",
+        "company": "유니포스트",
+        "period": "2023.10 ~ 2024.01",
+        "description": "기존 하이브리드 앱을 모던 JavaScript 기반으로 시스템 전환",
+        "responsibilities": [
+          "vanillaJs, 아파치 코르도바로 제공되던 솔루션프로그램을 모던 js로 시스템 전환 및 주도 (R&D팀 포함 총 3명 투입)",
+          "각종 전표처리 화면 및 파일 업로드 코드 구현",
+          "공통 컴포넌트 및 전역상태 관리 최적화를 통해 투입공수 0.5m/m에서 0.4m/m로 줄임"
+        ],
+        "tech": ["React", "React Native", "TypeScript", "Redux"]
+      }
+    },
+    "personal": {
+      "innerbooks": {
+        "title": "InnerBooks - 도서 추천 웹사이트",
+        "description": "사용자 취향 기반 도서 추천 시스템을 구현한 웹사이트입니다. 직관적인 UI/UX를 통해 사용자에게 최적의 도서를 제안합니다.",
+        "period": "2024.03 - 2024.05",
+        "link": "https://www.innerbooks.shop/"
+      },
+      "typingchanger": {
+        "title": "TypingChanger Easy - NPM 패키지",
+        "description": "한영 키를 잊고 타이핑했을 때 한글을 영어로, 영어를 한글로 자동 변환해주는 모듈입니다. 2벌식 키보드 배열을 기준으로 작동합니다.",
+        "period": "2024.06 - 2024.07",
+        "link": "https://www.npmjs.com/package/typingchanger_easy"
+      }
+    }
+  },
+  "contact": {
+    "title": "연락처",
+    "subtitle": "함께 일하고 싶으시다면 언제든지 연락해주세요!",
+    "github": "GitHub",
+    "githubDesc": "프로젝트 소스코드",
+    "portfolio": "포트폴리오",
+    "portfolioDesc": "개인 포트폴리오",
+    "blog": "블로그",
+    "blogDesc": "기술 블로그",
+    "visitSite": "방문하기",
+    "download": "다운로드",
+    "emailTitle": "이메일로 연락하기",
+    "emailDesc": "프로젝트 협업이나 채용 제안이 있으시면 언제든지 메일 주세요.",
+    "sendEmail": "이메일 보내기",
+    "footer": "© 2024 유재석. 모든 권리 보유."
+  }
+}

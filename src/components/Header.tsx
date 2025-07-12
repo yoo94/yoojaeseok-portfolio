@@ -10,13 +10,13 @@ export default function Header() {
   const { language, toggleLanguage, t } = useLanguage();
 
   const navItems = [
-    { href: '#about', label: t('소개', 'About') },
-    { href: '#education', label: t('학력', 'Education') },
-    { href: '#career', label: t('경력', 'Career') },
-    { href: '#activities', label: t('대외활동', 'Activities') },
-    { href: '#skills', label: t('스킬', 'Skills') },
-    { href: '#projects', label: t('프로젝트', 'Projects') },
-    { href: '#contact', label: t('연락처', 'Contact') }
+    { href: '#about', label: t('nav.about') },
+    { href: '#education', label: t('nav.education') },
+    { href: '#career', label: t('nav.career') },
+    { href: '#activities', label: t('nav.activities') },
+    { href: '#skills', label: t('nav.skills') },
+    { href: '#projects', label: t('nav.projects') },
+    { href: '#contact', label: t('nav.contact') }
   ];
 
   return (

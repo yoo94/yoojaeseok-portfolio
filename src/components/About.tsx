@@ -26,7 +26,7 @@ export default function About() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-12"
           >
-            {t('소개', 'About Me')}
+            {t('about.title')}
           </motion.h2>
 
           <motion.div
@@ -53,8 +53,7 @@ export default function About() {
                   className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed mb-6"
                 >
                   {t(
-                    '웹 기술에 대한 깊은 이해와 사용자 중심적 사고를 바탕으로 혁신적인 웹 애플리케이션을 개발합니다. 새로운 기술을 빠르게 습득하고 적용하는 것을 즐기며, 팀과의 협업을 통해 더 나은 결과를 만들어냅니다.',
-                    'I develop innovative web applications based on deep understanding of web technologies and user-centered thinking. I enjoy quickly learning and applying new technologies, and I create better results through collaboration with teams.'
+                    'about.description'
                   )}
                 </motion.p>
 
@@ -68,25 +67,25 @@ export default function About() {
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400">
-                      {t('사용자 중심적 사고', 'User-Centered Thinking')}
+                      {t('about.highlights.userCentered')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-purple-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400">
-                      {t('빠른 학습 능력', 'Fast Learning')}
+                      {t('about.highlights.fastLearning')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400">
-                      {t('팀워크 & 협업', 'Teamwork & Collaboration')}
+                      {t('about.highlights.teamwork')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400">
-                      {t('혁신적 솔루션', 'Innovative Solutions')}
+                      {t('about.highlights.innovative')}
                     </span>
                   </div>
                 </motion.div>

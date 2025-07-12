@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Code, Server, Wrench } from 'lucide-react';
+import { Code, Server, Settings } from 'lucide-react';
 import { useLanguage } from '@/lib/language';
 
 export default function Skills() {
@@ -13,22 +13,48 @@ export default function Skills() {
 
   const skillCategories = [
     {
-      title: t('프론트엔드', 'Frontend'),
+      title: t('skills.frontend'),
       icon: Code,
       color: 'from-blue-400 to-cyan-500',
-      skills: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML/CSS', 'Tailwind CSS']
+      skills: [
+        { name: 'React', level: 7 },
+        { name: 'Next.js', level: 7 },
+        { name: 'TypeScript', level: 5 },
+        { name: 'JavaScript', level: 9 },
+        { name: 'HTML/CSS', level: 8 },
+        { name: 'jQuery', level: 6 }
+      ]
     },
     {
-      title: t('백엔드', 'Backend'),
+      title: t('skills.backend'),
       icon: Server,
       color: 'from-green-400 to-emerald-500',
-      skills: ['Java', 'Spring Boot', 'Node.js', 'Python', 'MySQL', 'PostgreSQL']
+      skills: [
+        { name: 'Java', level: 6 },
+        { name: 'Spring', level: 4 },
+        { name: 'Node.js', level: 4 }
+      ]
     },
     {
-      title: t('도구', 'Tools'),
-      icon: Wrench,
-      color: 'from-purple-400 to-pink-500',
-      skills: ['Git', 'Docker', 'AWS', 'Figma', 'VS Code']
+      title: t('skills.infra'),
+      icon: Server,
+      color: 'from-orange-400 to-red-500',
+      skills: [
+        { name: 'Docker', level: 6 },
+        { name: 'tomcat9', level: 5 },
+        { name: 'apache', level: 5 },
+        { name: 'Jenkins', level: 5 }
+      ]
+    },
+    {
+      title: t('skills.tools'),
+      icon: Settings,
+      color: 'from-gray-400 to-slate-500',
+      skills: [
+        { name: 'Git', level: 7 },
+        { name: 'Figma', level: 4 },
+        { name: 'Redmine', level: 7 }
+      ]
     }
   ];
 
@@ -47,10 +73,10 @@ export default function Skills() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-16"
           >
-            {t('핵심 역량', 'Core Skills')}
+            {t('skills.title')}
           </motion.h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
@@ -78,7 +104,7 @@ export default function Skills() {
                 <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
                     <motion.div
-                      key={skill}
+                      key={skill.name}
                       initial={{ opacity: 0, x: -20 }}
                       animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -20 }}
                       transition={{ 
@@ -88,51 +114,28 @@ export default function Skills() {
                       whileHover={{ scale: 1.05, x: 5 }}
                       className="bg-white dark:bg-slate-900 rounded-lg p-4 shadow-md border border-gray-100 dark:border-gray-600 group-hover:shadow-lg transition-shadow"
                     >
-                      <div className="flex items-center justify-between">
+                      <div className="flex items-center justify-between mb-2">
                         <span className="text-gray-800 dark:text-gray-200 font-medium">
-                          {skill}
+                          {skill.name}
                         </span>
+                        <span className="text-sm text-gray-500 dark:text-gray-400">
+                          {skill.level}/10
+                        </span>
+                      </div>
+                      <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2">
                         <motion.div
                           initial={{ width: 0 }}
-                          animate={isInView ? { width: '100%' } : { width: 0 }}
+                          animate={isInView ? { width: `${skill.level * 10}%` } : { width: 0 }}
                           transition={{ 
                             duration: 1, 
                             delay: 1 + categoryIndex * 0.2 + skillIndex * 0.1 
                           }}
-                          className={`h-1 bg-gradient-to-r ${category.color} rounded-full ml-4 max-w-[40px]`}
+                          className={`h-2 bg-gradient-to-r ${category.color} rounded-full`}
                         />
                       </div>
                     </motion.div>
                   ))}
                 </div>
-
-                {/* Skill Level Indicator */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={isInView ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 0 }}
-                  transition={{ duration: 0.5, delay: 1.5 + categoryIndex * 0.2 }}
-                  className="mt-6 text-center"
-                >
-                  <div className="flex justify-center space-x-1">
-                    {[1, 2, 3, 4, 5].map((level) => (
-                      <motion.div
-                        key={level}
-                        initial={{ scale: 0 }}
-                        animate={isInView ? { scale: 1 } : { scale: 0 }}
-                        transition={{ 
-                          duration: 0.3, 
-                          delay: 1.7 + categoryIndex * 0.2 + level * 0.1 
-                        }}
-                        className={`w-2 h-2 rounded-full ${
-                          level <= 4 
-                            ? `bg-gradient-to-r ${category.color}` 
-                            : 'bg-gray-300 dark:bg-gray-600'
-                        }`}
-                      />
-                    ))}
-                  </div>
-                  <p className="text-xs text-gray-500 dark:text-gray-400 mt-2">숙련도</p>
-                </motion.div>
               </motion.div>
             ))}
           </div>

@@ -26,7 +26,7 @@ export default function Activities() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-16"
           >
-            {t('대외활동', 'Activities')}
+            {t('activities.title')}
           </motion.h2>
 
           <motion.div
@@ -52,11 +52,11 @@ export default function Activities() {
                   className="mb-4"
                 >
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
-                    {t('삼성 청년 SW 아카데미 (SSAFY) 12기', 'Samsung Youth SW Academy (SSAFY) 12th')}
+                    {t('activities.ssafy')}
                   </h3>
                   <div className="flex items-center text-gray-600 dark:text-gray-400 mb-4">
                     <Calendar className="w-4 h-4 mr-2" />
-                    <span>{t('2024.11 - 현재', '2024.11 - Present')}</span>
+                    <span>{t('activities.period')}</span>
                   </div>
                 </motion.div>
 
@@ -67,8 +67,7 @@ export default function Activities() {
                   className="text-gray-700 dark:text-gray-300 leading-relaxed mb-6"
                 >
                   {t(
-                    'Java 트랙 - 웹 풀스택 개발 교육과정',
-                    'Java Track - Web Full-stack Development Training Program'
+                    'activities.description'
                   )}
                 </motion.p>
 
@@ -81,7 +80,7 @@ export default function Activities() {
                 >
                   <span className="px-4 py-2 bg-gradient-to-r from-orange-100 to-red-100 dark:from-orange-900 dark:to-red-900 text-orange-700 dark:text-orange-300 rounded-full text-sm font-semibold border border-orange-200 dark:border-orange-700">
                     <span className="w-2 h-2 bg-orange-500 rounded-full inline-block mr-2 animate-pulse"></span>
-                    {t('진행 중', 'In Progress')}
+                    {t('activities.inProgress')}
                   </span>
                 </motion.div>
 
@@ -95,25 +94,25 @@ export default function Activities() {
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-orange-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400 text-sm">
-                      {t('웹 풀스택 개발', 'Web Full-stack Development')}
+                      {t('activities.highlights.fullstack')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-red-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400 text-sm">
-                      {t('Java 프로그래밍', 'Java Programming')}
+                      {t('activities.highlights.java')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-yellow-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400 text-sm">
-                      {t('프로젝트 기반 학습', 'Project-based Learning')}
+                      {t('activities.highlights.project')}
                     </span>
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <span className="text-gray-600 dark:text-gray-400 text-sm">
-                      {t('팀 협업', 'Team Collaboration')}
+                      {t('activities.highlights.teamwork')}
                     </span>
                   </div>
                 </motion.div>

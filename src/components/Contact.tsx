@@ -13,25 +13,28 @@ export default function Contact() {
 
   const contacts = [
     {
-      title: t('GitHub', 'GitHub'),
+      title: t('contact.github'),
       url: 'https://github.com/yoo94',
       icon: Github,
       color: 'from-gray-700 to-gray-900',
-      description: t('프로젝트 소스코드', 'Project Source Code')
+      description: t('contact.githubDesc'),
+      buttonText : t('contact.visitSite')
     },
     {
-      title: t('포트폴리오', 'Portfolio'),
-      url: 'https://yoo94.github.io/about/#/',
+      title: t('contact.portfolio'),
+      url: './down/yoojaeseokPortfolio.pdf',
       icon: Globe,
       color: 'from-blue-500 to-cyan-500',
-      description: t('개인 포트폴리오', 'Personal Portfolio')
+      description: t('contact.portfolioDesc'),
+      buttonText: t('contact.download')
     },
     {
-      title: t('블로그', 'Blog'),
-      url: 'https://yoo94.github.io/blog/#/',
+      title: t('contact.blog'),
+      url: 'https://yoo94.github.io/#/',
       icon: BookOpen,
       color: 'from-green-500 to-emerald-500',
-      description: t('기술 블로그', 'Tech Blog')
+      description: t('contact.blogDesc'),
+      buttonText: t('contact.visitSite')
     }
   ];
 
@@ -50,7 +53,7 @@ export default function Contact() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-8"
           >
-            {t('연락처', 'Contact')}
+            {t('contact.title')}
           </motion.h2>
 
           <motion.p
@@ -60,8 +63,7 @@ export default function Contact() {
             className="text-xl text-gray-600 dark:text-gray-400 text-center mb-16"
           >
             {t(
-              '함께 일하고 싶으시다면 언제든지 연락해주세요!',
-              "Let's work together! Feel free to reach out anytime!"
+              'contact.subtitle'
             )}
           </motion.p>
 
@@ -97,7 +99,7 @@ export default function Contact() {
                   </p>
                   
                   <div className="flex items-center justify-center text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300">
-                    <span className="text-sm font-medium">방문하기</span>
+                    <span className="text-sm font-medium">{contact.buttonText }</span>
                     <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </div>
                 </div>
@@ -120,13 +122,12 @@ export default function Contact() {
             </motion.div>
             
             <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-              {t('이메일로 연락하기', 'Contact via Email')}
+              {t('contact.emailTitle')}
             </h3>
             
             <p className="text-gray-600 dark:text-gray-400 mb-6">
               {t(
-                '프로젝트 협업이나 채용 제안이 있으시면 언제든지 메일 주세요.',
-                'If you have project collaboration or job opportunities, please feel free to email me.'
+                'contact.emailDesc'
               )}
             </p>
             
@@ -137,7 +138,7 @@ export default function Contact() {
               className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <Mail className="w-5 h-5 mr-2" />
-              {t('이메일 보내기', 'Send Email')}
+              {t('contact.sendEmail')}
             </motion.a>
           </motion.div>
         </motion.div>
@@ -150,8 +151,8 @@ export default function Contact() {
         transition={{ duration: 0.8, delay: 1.4 }}
         className="mt-20 pt-8 border-t border-gray-200 dark:border-gray-700 text-center"
       >
-        <p className="text-gray-500 dark:text-gray-400">
-          © 2025 Jaeseok Yoo. Made with ❤️ using Next.js & Tailwind CSS
+        <p className="text-center text-gray-600 dark:text-gray-400 mt-16">
+          {t('contact.footer')}
         </p>
       </motion.div>
     </section>

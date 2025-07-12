@@ -26,7 +26,7 @@ export default function Education() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-16"
           >
-            {t('학력 & 자격증', 'Education & Certifications')}
+            {t('education.title')}
           </motion.h2>
 
           <div className="grid md:grid-cols-2 gap-8">
@@ -47,13 +47,14 @@ export default function Education() {
                 </motion.div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    {t('학력', 'Education')}
+                    {t('education.educationTitle')}
                   </h3>
                   <div className="w-12 h-1 bg-blue-500 rounded-full mt-2"></div>
                 </div>
               </div>
 
               <div className="space-y-4">
+                {/* KNOU */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -61,13 +62,55 @@ export default function Education() {
                   className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6"
                 >
                   <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
-                    {t('한국외국어대학교', 'Hankuk University of Foreign Studies')}
+                    {t('education.universities.knou.name')}
                   </h4>
-                  <p className="text-gray-600 dark:text-gray-400 mb-2">
-                    {t('산업경영공학', 'Industrial & Management Engineering')}
+                  <p className="text-gray-600 dark:text-gray-400 mb-1">
+                    {t('education.universities.knou.major')} | {t('education.universities.knou.degree')}
+                  </p>
+                  <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">
+                    {t('education.universities.knou.period')} | {t('education.universities.knou.status')}
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {t('education.universities.knou.description')}
+                  </p>
+                </motion.div>
+
+                {/* MTDI */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.8, delay: 0.7 }}
+                  className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6"
+                >
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {t('education.universities.mtdi.name')}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 mb-1">
+                    {t('education.universities.mtdi.major')} | {t('education.universities.mtdi.degree')}
+                  </p>
+                  <p className="text-sm text-blue-600 dark:text-blue-400 font-medium mb-2">
+                    {t('education.universities.mtdi.period')} | {t('education.universities.mtdi.status')}
+                  </p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">
+                    {t('education.universities.mtdi.description')}
+                  </p>
+                </motion.div>
+
+                {/* KTCU */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
+                  transition={{ duration: 0.8, delay: 0.8 }}
+                  className="bg-gray-50 dark:bg-slate-800 rounded-lg p-6"
+                >
+                  <h4 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">
+                    {t('education.universities.ktcu.name')}
+                  </h4>
+                  <p className="text-gray-600 dark:text-gray-400 mb-1">
+                    {t('education.universities.ktcu.major')} | {t('education.universities.ktcu.degree')}
                   </p>
                   <p className="text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    2017.03 - 2023.02
+                    {t('education.universities.ktcu.period')} | {t('education.universities.ktcu.status')}
                   </p>
                 </motion.div>
               </div>
@@ -90,7 +133,7 @@ export default function Education() {
                 </motion.div>
                 <div>
                   <h3 className="text-2xl font-bold text-gray-900 dark:text-white">
-                    {t('자격증', 'Certifications')}
+                    {t('education.certificationsTitle')}
                   </h3>
                   <div className="w-12 h-1 bg-purple-500 rounded-full mt-2"></div>
                 </div>
@@ -104,10 +147,17 @@ export default function Education() {
                   whileHover={{ scale: 1.02 }}
                   className="bg-gray-50 dark:bg-slate-800 rounded-lg p-4 border-l-4 border-purple-500"
                 >
-                  <p className="text-gray-800 dark:text-gray-200 font-medium">
-                    {t('정보처리기사 (2023.06)', 'Engineer Information Processing (2023.06)')}
+                  <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
+                    {t('education.certifications.sqld.name')}
+                  </h5>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                    {t('education.certifications.sqld.issuer')}
+                  </p>
+                  <p className="text-sm text-purple-600 dark:text-purple-400 font-medium">
+                    {t('education.certifications.sqld.date')}
                   </p>
                 </motion.div>
+                
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
@@ -115,8 +165,14 @@ export default function Education() {
                   whileHover={{ scale: 1.02 }}
                   className="bg-gray-50 dark:bg-slate-800 rounded-lg p-4 border-l-4 border-purple-500"
                 >
-                  <p className="text-gray-800 dark:text-gray-200 font-medium">
-                    SQLD (2023.09)
+                  <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-200 mb-1">
+                    {t('education.certifications.engineer.name')}
+                  </h5>
+                  <p className="text-sm text-gray-600 dark:text-gray-400 mb-1">
+                    {t('education.certifications.engineer.issuer')}
+                  </p>
+                  <p className="text-sm text-purple-600 dark:text-purple-400 font-medium">
+                    {t('education.certifications.engineer.date')}
                   </p>
                 </motion.div>
               </div>

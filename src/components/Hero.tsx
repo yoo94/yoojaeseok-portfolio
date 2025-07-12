@@ -23,7 +23,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white"
           >
-            {t('안녕하세요', 'Hello')}
+            {t('hero.greeting')}
           </motion.h1>
 
           {/* Name and Title */}
@@ -34,10 +34,10 @@ export default function Hero() {
             className="space-y-4"
           >
             <p className="text-xl md:text-2xl text-blue-600 dark:text-blue-400 font-semibold">
-              {t('프론트엔드 개발자', 'Frontend Developer')}
+              {t('hero.title')}
             </p>
             <h2 className="text-3xl md:text-5xl font-bold text-gray-800 dark:text-gray-200">
-              {t('유재석입니다', "I'm Jaeseok Yoo")}
+              {t('hero.name')}
             </h2>
           </motion.div>
 
@@ -46,11 +46,30 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto leading-relaxed"
+            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-5xl mx-auto leading-relaxed"
           >
             {t(
-              '사용자 경험을 중시하는 웹 개발자로, 창의적이고 효율적인 솔루션을 제공합니다.',
-              'A web developer who prioritizes user experience and provides creative and efficient solutions.'
+              'hero.description'
+            )}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-5xl mx-auto leading-relaxed"
+          >
+            {t(
+              'hero.description2'
+            )}
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-5xl mx-auto leading-relaxed"
+          >
+            {t(
+              'hero.description3'
             )}
           </motion.p>
 
@@ -100,7 +119,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-lg shadow-lg transition-colors"
               >
-                {t('더 알아보기', 'Learn More')}
+                {t('hero.learnMore')}
               </motion.a>
               <motion.a
                 href="#contact"
@@ -108,7 +127,7 @@ export default function Hero() {
                 whileTap={{ scale: 0.95 }}
                 className="px-8 py-4 border-2 border-blue-600 text-blue-600 dark:text-blue-400 hover:bg-blue-600 hover:text-white font-semibold rounded-lg transition-colors"
               >
-                {t('연락하기', 'Contact')}
+                {t('hero.contact')}
               </motion.a>
             </motion.div>
           </motion.div>
