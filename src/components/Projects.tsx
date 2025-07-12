@@ -177,7 +177,7 @@ export default function Projects() {
   ];
 
   return (
-    <section id="projects" className="py-20 px-6 bg-gray-50 dark:bg-slate-800">
+    <section id="projects" className="py-16 xs:py-20 px-4 xs:px-6 bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto max-w-7xl">
         <motion.div
           ref={ref}
@@ -205,7 +205,7 @@ export default function Projects() {
               {t('projects.companyProjects')}
             </h3>
             
-            <div className="grid lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 xs:gap-8">
               {companyProjects.map((project, index) => (
                 <motion.div
                   key={project.key}
@@ -301,7 +301,7 @@ export default function Projects() {
               {t('projects.personalProjects')}
             </h3>
             
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8">
               {personalProjects.map((project, index) => (
                 <motion.div
                   key={project.key}

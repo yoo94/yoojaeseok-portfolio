@@ -39,7 +39,7 @@ export default function Contact() {
   ];
 
   return (
-    <section id="contact" className="py-20 px-6 bg-white dark:bg-slate-900">
+    <section id="contact" className="py-16 xs:py-20 px-4 xs:px-6 bg-white dark:bg-slate-900">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           ref={ref}
@@ -51,7 +51,7 @@ export default function Contact() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-8"
+            className="text-3xl xs:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-6 xs:mb-8"
           >
             {t('contact.title')}
           </motion.h2>
@@ -68,7 +68,7 @@ export default function Contact() {
           </motion.p>
 
           {/* Contact Links */}
-          <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 xs:gap-6 mb-8 xs:mb-12">
             {contacts.map((contact, index) => (
               <motion.a
                 key={contact.title}

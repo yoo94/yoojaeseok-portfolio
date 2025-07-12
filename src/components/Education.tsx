@@ -12,7 +12,7 @@ export default function Education() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="education" className="py-20 px-6 bg-gray-50 dark:bg-slate-800">
+    <section id="education" className="py-16 xs:py-20 px-4 xs:px-6 bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -24,7 +24,7 @@ export default function Education() {
             initial={{ opacity: 0, y: 30 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-16"
+            className="text-3xl xs:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white text-center mb-12 xs:mb-16"
           >
             {t('education.title')}
           </motion.h2>

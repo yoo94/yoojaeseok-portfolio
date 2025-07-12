@@ -63,7 +63,7 @@ export default function Activities() {
   ];
 
   return (
-    <section id="activities" className="py-20 px-6 bg-gray-50 dark:bg-slate-800">
+    <section id="activities" className="py-16 xs:py-20 px-4 xs:px-6 bg-gray-50 dark:bg-slate-800">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -80,7 +80,7 @@ export default function Activities() {
             {t('activities.title')}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8">
             {activities.map((activity, index) => {
               const Icon = activity.icon;
               const isInProgress = t(`activities.activities.${activity.key}.status`) === '진행 중' || 

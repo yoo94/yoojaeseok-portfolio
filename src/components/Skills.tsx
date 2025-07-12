@@ -59,7 +59,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="py-20 px-6 bg-white dark:bg-slate-900">
+    <section id="skills" className="py-16 xs:py-20 px-4 xs:px-6 bg-white dark:bg-slate-900">
       <div className="container mx-auto max-w-6xl">
         <motion.div
           ref={ref}
@@ -76,7 +76,7 @@ export default function Skills() {
             {t('skills.title')}
           </motion.h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 xs:gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}

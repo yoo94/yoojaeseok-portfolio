@@ -48,7 +48,7 @@ export default function Career() {
   ];
 
   return (
-    <section id="career" className="py-20 px-6 bg-white dark:bg-slate-900">
+    <section id="career" className="py-16 xs:py-20 px-4 xs:px-6 bg-white dark:bg-slate-900">
       <div className="container mx-auto max-w-4xl">
         <motion.div
           ref={ref}
@@ -72,7 +72,7 @@ export default function Career() {
             className="relative"
           >
             {/* Timeline Line */}
-            <div className="absolute left-8 top-12 bottom-8 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
+            <div className="absolute left-6 xs:left-8 top-12 bottom-8 w-0.5 bg-gradient-to-b from-blue-500 to-purple-500"></div>
 
             {/* Career Cards */}
             {careers.map((career, index) => (
