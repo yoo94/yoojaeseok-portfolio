@@ -258,7 +258,7 @@ export default function Projects() {
 
                       {/* Responsibilities */}
                       <div className="mb-6">
-                        <h5 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">주요 업무</h5>
+                        <h5 className="text-sm font-semibold text-gray-600 dark:text-gray-400 mb-3">{t('projects.workResponsibilities')}</h5>
                         <ul className="space-y-2">
                           {project.responsibilities.map((responsibility, respIndex) => (
                             <li key={respIndex} className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed pl-4 border-l-2 border-gray-200 dark:border-gray-600">
